@@ -1,0 +1,58 @@
+$a : 100%;
+$b : 100vh;
+
+.login-container{
+  width: $a;
+  height: $b;
+  background: linear-gradient(150deg, #3aa2e3 0%, #fff 100% );
+  position: relative;
+  .logo{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold !important;
+    position: absolute;
+    letter-spacing: 10px;
+    top: 30px;
+    right: 50px;
+  }
+  .desc{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif  ;
+    font-weight: inherit !important;
+    top: 150px;
+    right: 50px;
+    position: absolute;
+    text-align: right;
+    width: 999px;
+  }
+  .film{
+    position:absolute;
+    top:50px;
+    left:20px;
+    width: 360px;
+  }
+  .login-form{
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(185, 173, 173, 0.3);
+    bottom: 40px;
+    right: 50px;
+    position: absolute;
+  }
+  .btn-container{
+    .btn{
+      margin-top: 25px;
+    }
+  }
+  .error{
+    color:red;
+    position: absolute;
+    bottom: 65px;
+    right: 1.3rem;
+  }
+}
+
+

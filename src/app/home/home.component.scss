@@ -1,0 +1,93 @@
+.home-container{
+  display: flex;
+  .all-movies{
+    width: 75%;
+    min-height: calc(100vh - 80px);
+    border-right: 2px solid skyblue;
+    padding: 20px 40px;
+    font-family: 'Times New Roman', Times, serif;
+    .top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      h4{
+        border-left: 5px solid rgba(84, 156, 210, 0.517);
+        border-radius: 3px;
+        padding-left: 10px;
+        cursor: pointer;
+      }
+      .view-all{
+        cursor: pointer;
+        background-color:rgba(84, 156, 210, 0.517);
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
+    .movies-thumbnail{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .movie{
+        margin: 3px 3px;
+        .cover{
+          cursor: pointer;
+          img {
+            border-radius: 5px;
+            width: fit-content;
+          }
+        }
+        .detail{
+          width: 180px;
+          .name{
+            font-weight: bold;
+            height: 50px;
+            margin-top: 5px;
+            cursor: pointer;
+            text-align: center;
+            .rating-value{
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .popular-movies{
+    width: 25%;
+    min-height: calc(100vh - 80px);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px 40px;
+    h4{
+      font-size: 20px;
+      border-left: 5px solid rgba(84, 156, 210, 0.517);
+      border-radius: 3px;
+      padding-left: 10px;
+      cursor: pointer;
+    }
+    .movies{
+      .movie{
+        margin-bottom: 20px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .name {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.rating {
+  padding-right: 45px;
+  position: relative;
+  .rating-value {
+    top: 10px;
+    right: 0px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
